@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: yda3jo2qm-go-gitops
+  description: This is GitOps manifest for yda3jo2qm-go   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: yda3jo2qm-go
+    janus-idp.io/tekton: yda3jo2qm-go 
+    backstage.io/kubernetes-id: yda3jo2qm-go 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:yda3jo2qm-go

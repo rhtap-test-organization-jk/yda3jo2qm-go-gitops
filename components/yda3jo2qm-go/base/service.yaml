@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: yda3jo2qm-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: yda3jo2qm-go 
+  name: yda3jo2qm-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: yda3jo2qm-go 
